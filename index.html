@@ -12,14 +12,14 @@ JOKR: Joint Keypoint Representation for Unsupervised Cross-Domain Motion Retarge
   <br>
   <table border="0" align="center" class="authors">
     <tbody><tr align="center">
-      <td><a href="mailto:ron.mokady@gmail.com">Ron Mokady</a>*</td>
+      <td><a href="mailto:ron.mokady@gmail.com">Ron Mokady</a></td>
       <td><a href="mailto:rotemtzaban@mail.tau.ac.il ">Rotem Tzaban</a></td>
-      <td><a href="https://sagiebenaim.github.io/">Sagie Benaim</a>*</td>
+      <td><a href="https://sagiebenaim.github.io/">Sagie Benaim</a></td>
       <td><a href="https://www.cs.tau.ac.il/~amberman/">Amit Bermano</a></td>
       <td><a href="https://www.cs.tau.ac.il/~dcor/">Daniel Cohen-Or</a></td>
     </tr>
   </tbody></table>
-  <!--
+
     <p class="section">&nbsp;</p>
   <table width="200" border="0" align="center">
     <tbody><tr>
@@ -27,14 +27,14 @@ JOKR: Joint Keypoint Representation for Unsupervised Cross-Domain Motion Retarge
     </tr>
     <p style="font-size: 14px">* Equal contributors.</p>
     <tr>
-      <td class="caption"><p>Our method takes two images as input (left and right), and generates images that consist of
-features from one image, spatially structured analogically to the other.</p></td>
+      <td class="caption"><p>Motion retargeting results from a single video pair. The input videos (top) are used to generate the retargeting (bottom). As can be seen, each generated frame corresponds to the motion portrayed by the source, while keeping the style of the target.</p></td>
     </tr>
 </tbody></table>
     <p class="section">&nbsp;</p>
  <p><span class="section">Abstract</span></p>
-  <p>The task of unsupervised image-to-image translation has seen substantial advancements in recent years through the use of deep neural networks. Typically, the proposed solutions learn the characterizing distribution of two large, unpaired collections of images, and are able to alter the appearance of a given image, while keeping its geometry intact. In this paper, we explore the capabilities of neural networks to understand image structure given only a single pair of images, A and B. We seek to generate images that are structurally aligned : that is, to generate an image that keeps the appearance and style of B, but has a structural arrangement that corresponds to A. The key idea is to map between image patches at different scales. This enables controlling the granularity at which analogies are produced, which determines the conceptual distinction between style and content. In addition to structural alignment, our method can be used to generate high quality imagery in other conditional generation tasks utilizing images A and B only: guided image synthesis, style and texture transfer, text translation as well as video translation.<br>
+  <p>The task of unsupervised motion retargeting in videos has seen substantial advancements through the use of deep neural networks.  While early works concentrated on specific object priors such as a human face or body, recent work considered the unsupervised case. When the source and target videos, however, are of different shapes, current methods fail. To alleviate this problem, we introduce JOKR - a JOint Keypoint Representation that captures the motion common to both the source and target videos, without requiring any object prior or data collection. By employing a domain confusion term, we enforce the unsupervised keypoint representations of both videos to be indistinguishable. This encourages disentanglement between the parts of the motion that are common to the two domains, and their distinctive appearance and motion, enabling the generation of videos that capture the motion of the one while depicting the style of the other. To enable cases where the objects are of different proportions or orientations, we apply a learned affine transformation between the JOKRs. This augments the representation to be affine invariant, and in practice broadens the variety of possible retargeting pairs. This geometry-driven representation enables further intuitive control, such as temporal coherence and manual editing. Through comprehensive experimentation, we demonstrate the applicability of our method to different challenging cross-domain video pairs. We evaluate our method both qualitatively and quantitatively, and demonstrate that our method handles various cross-domain scenarios, such as different animals, different flowers, and humans. We also demonstrate superior temporal coherency and visual quality compared to state-of-the-art alternatives, through statistical metrics and a user study.<br>
   </p>
+    <!--
   <p class="section">5 Minute Video</p>
 <iframe width="960" height="540" src="images/video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <p class="section">Paper</p>
