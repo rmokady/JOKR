@@ -16,8 +16,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="89" column="82" selection-start-line="89" selection-start-column="82" selection-end-line="89" selection-end-column="82" />
+            <state relative-caret-position="6">
+              <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -25,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index copy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+            <state relative-caret-position="569">
+              <caret line="94" selection-start-line="94" selection-end-line="96" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -55,9 +64,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="98" />
-    <option name="width" value="1440" />
-    <option name="height" value="802" />
+    <option name="y" value="25" />
+    <option name="width" value="1709" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -70,6 +79,11 @@
             <path>
               <item name="JOKR" type="b2602c69:ProjectViewProjectNode" />
               <item name="JOKR" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JOKR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JOKR" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -108,18 +122,18 @@
       <option name="presentableId" value="Default" />
       <updated>1623741131152</updated>
       <workItem from="1623741138661" duration="2324000" />
-      <workItem from="1623758332987" duration="295000" />
+      <workItem from="1623758332987" duration="2091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2619000" />
+    <option name="totallyTimeSpent" value="4415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="98" width="1440" height="802" extended-state="0" />
+    <frame x="0" y="25" width="1709" height="875" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21235752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -149,15 +163,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index copy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+        <state relative-caret-position="569">
+          <caret line="94" selection-start-line="94" selection-end-line="96" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="89" column="82" selection-start-line="89" selection-start-column="82" selection-end-line="89" selection-end-column="82" />
+        <state relative-caret-position="6">
+          <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
         </state>
       </provider>
     </entry>
