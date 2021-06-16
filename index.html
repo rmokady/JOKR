@@ -20,31 +20,7 @@ JOKR: Joint Keypoint Representation for Unsupervised Cross-Domain Motion Retarge
     </tr>
   </tbody></table>
 
-
-    <p class="section">Paper</p>
-  <table border="0">
-    <tbody>
-      <tr>
-        <td><a href="paper.pdf"><img src="images/paper.png" alt="" width="200"></a></td>
-        <td>&nbsp;</td>
-        <td><p>[<a href="paper.pdf">PDF</a>]</p></td>
-      </tr>
-    </tbody>
-  </table>
-  <p class="section">Code</p>
-  <table border="0">
-    <tbody>
-      <tr>
-        <td><a href="https://github.com/rmokady/structural-analogy"><img src="images/code.png" alt="" width="200"></a></td>
-        <td>&nbsp;</td>
-        <td><p>[<a href="https://github.com/rmokady/structural-analogy">Link</a>]</p></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-
-    <p class="section">&nbsp;</p>
+      <p class="section">&nbsp;</p>
   <table width="200" border="0" align="center">
     <tbody><tr>
       <td><img src="images/teaser.png" width="950" alt=""></td>
@@ -53,19 +29,9 @@ JOKR: Joint Keypoint Representation for Unsupervised Cross-Domain Motion Retarge
       <td class="caption"><p>Motion retargeting results from a single video pair. The input videos (top) are used to generate the retargeting (bottom). As can be seen, each generated frame corresponds to the motion portrayed by the source, while keeping the style of the target.</p></td>
     </tr>
 </tbody></table>
-    <p class="section">&nbsp;</p>
- <p><span class="section">Abstract</span></p>
-  <p>The task of unsupervised motion retargeting in videos has seen substantial advancements through the use of deep neural networks.  While early works concentrated on specific object priors such as a human face or body, recent work considered the unsupervised case. When the source and target videos, however, are of different shapes, current methods fail. To alleviate this problem, we introduce JOKR - a JOint Keypoint Representation that captures the motion common to both the source and target videos, without requiring any object prior or data collection. By employing a domain confusion term, we enforce the unsupervised keypoint representations of both videos to be indistinguishable. This encourages disentanglement between the parts of the motion that are common to the two domains, and their distinctive appearance and motion, enabling the generation of videos that capture the motion of the one while depicting the style of the other. To enable cases where the objects are of different proportions or orientations, we apply a learned affine transformation between the JOKRs. This augments the representation to be affine invariant, and in practice broadens the variety of possible retargeting pairs. This geometry-driven representation enables further intuitive control, such as temporal coherence and manual editing. Through comprehensive experimentation, we demonstrate the applicability of our method to different challenging cross-domain video pairs. We evaluate our method both qualitatively and quantitatively, and demonstrate that our method handles various cross-domain scenarios, such as different animals, different flowers, and humans. We also demonstrate superior temporal coherency and visual quality compared to state-of-the-art alternatives, through statistical metrics and a user study.<br>
-  </p>
-    <!--
-  <p class="section">5 Minute Video</p>
-<iframe width="960" height="540" src="images/video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  -->
 
-
-
-  <p class="section">Cross-Domain Motion Retargeting</p>
-    <p>The task of unsupervised motion retargeting in videos<br>
+    <p class="section">Cross-Domain Motion Retargeting</p>
+    <p>We demonstrate our results for the task of unsupervised cross-domain motion retargeting compared to other methods, for more details refer to the paper.<br>
   </p>
   <div class="container">
     <video class="comparison_video" controls>
@@ -90,7 +56,47 @@ JOKR: Joint Keypoint Representation for Unsupervised Cross-Domain Motion Retarge
     </video>
   </div>
 
+
+    <p class="section">Paper</p>
+  <table border="0">
+    <tbody>
+      <tr>
+        <td><a href="paper.pdf"><img src="images/paper.png" alt="" width="200"></a></td>
+        <td>&nbsp;</td>
+        <td><p>[<a href="paper.pdf">PDF</a>]</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="section">Code</p>
+  <table border="0">
+    <tbody>
+      <tr>
+        <td><a href="https://github.com/rmokady/structural-analogy"><img src="images/code.png" alt="" width="200"></a></td>
+        <td>&nbsp;</td>
+        <td><p>[<a href="https://github.com/rmokady/structural-analogy">Link</a>]</p></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+    <p class="section">&nbsp;</p>
+ <p><span class="section">Abstract</span></p>
+  <p>The task of unsupervised motion retargeting in videos has seen substantial advancements through the use of deep neural networks.  While early works concentrated on specific object priors such as a human face or body, recent work considered the unsupervised case. When the source and target videos, however, are of different shapes, current methods fail. To alleviate this problem, we introduce JOKR - a JOint Keypoint Representation that captures the motion common to both the source and target videos, without requiring any object prior or data collection. By employing a domain confusion term, we enforce the unsupervised keypoint representations of both videos to be indistinguishable. This encourages disentanglement between the parts of the motion that are common to the two domains, and their distinctive appearance and motion, enabling the generation of videos that capture the motion of the one while depicting the style of the other. To enable cases where the objects are of different proportions or orientations, we apply a learned affine transformation between the JOKRs. This augments the representation to be affine invariant, and in practice broadens the variety of possible retargeting pairs. This geometry-driven representation enables further intuitive control, such as temporal coherence and manual editing. Through comprehensive experimentation, we demonstrate the applicability of our method to different challenging cross-domain video pairs. We evaluate our method both qualitatively and quantitatively, and demonstrate that our method handles various cross-domain scenarios, such as different animals, different flowers, and humans. We also demonstrate superior temporal coherency and visual quality compared to state-of-the-art alternatives, through statistical metrics and a user study.<br>
+  </p>
+    <!--
+  <p class="section">5 Minute Video</p>
+<iframe width="960" height="540" src="images/video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  -->
+
+
+
+
+
   <p class="section">Other Results</p>
+      <p>We also show our method is valid for various domains.<br>
+  </p>
   <div class="container">
     <video class="comparison_video" controls>
       <source src="videos/additional_videos/gif_726_stack.mp4" type="video/mp4" width="200"/>
@@ -108,6 +114,8 @@ JOKR: Joint Keypoint Representation for Unsupervised Cross-Domain Motion Retarge
   </div>
 
   <p class="section">Keypoints Interpretability</p>
+        <p>To demonstrate our meaningful keypoints representation, we present editing results obtained by moving a single or a pair of keypoints.<br>
+  </p>
   <div class="container">
     <video width="400" height="400" controls>
       <source src="videos/editing/cat_front_leg.mp4" type="video/mp4">
@@ -130,6 +138,8 @@ JOKR: Joint Keypoint Representation for Unsupervised Cross-Domain Motion Retarge
   </div>
 
   <p class="section">Temporal Regularization Ablation Study</p>
+   <p>The effect of omitting the temporal regularization is presented in the following video.<br>
+  </p>
   <div class="container">
     <video width="400" height="400" controls>
       <source src="videos/temporal_consistency/temporal_consistency.mp4">
