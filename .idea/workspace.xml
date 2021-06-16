@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ce12974-ea13-4f64-aa9d-4ec070d4575b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +15,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
+            <state relative-caret-position="305">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="e#3754#3760#1" expanded="true" />
+                <element signature="e#4202#4208#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,12 +125,12 @@
       <option name="presentableId" value="Default" />
       <updated>1623741131152</updated>
       <workItem from="1623741138661" duration="2324000" />
-      <workItem from="1623758332987" duration="2091000" />
+      <workItem from="1623758332987" duration="2708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4415000" />
+    <option name="totallyTimeSpent" value="5032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1709" height="875" extended-state="0" />
@@ -177,8 +180,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
+        <state relative-caret-position="305">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#3754#3760#1" expanded="true" />
+            <element signature="e#4202#4208#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
