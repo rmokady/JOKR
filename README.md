@@ -6,4 +6,4 @@ Implementation of "JOKR: Joint Keypoint Representation for Unsupervised Cross-Do
 
 
 
-# Code will be released soon
+# Code will be released 05.07.21
