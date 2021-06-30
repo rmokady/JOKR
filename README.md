@@ -75,7 +75,7 @@ MKL_NUM_THREADS=8
 
 Generate the frames:
 ```
-python inference.py --root_a ./data/cat/train_seg/ --root_b ./data/fox/train_seg/ --resize --no_hflip --out ../infer_cat_fox/ --load ../second_cat_fox/checkpoint_30000 --bs 1 --num_kp 14 --data_size 80 --affine --splitted
+CUDA_VISIBLE_DEVICES=0 python inference.py --root_a ./data/cat/train_seg/ --root_b ./data/fox/train_seg/ --resize --no_hflip --out ../infer_cat_fox/ --load ../second_cat_fox/checkpoint_30000 --bs 1 --num_kp 14 --data_size 80 --affine --splitted
 ```
 
 To video:
