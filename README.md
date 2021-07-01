@@ -69,7 +69,14 @@ Pytorch Dataloader might create too many threads - deacreasing CPU performance. 
 ```
 MKL_NUM_THREADS=8
 ```
-
+For pairs who share a similar scale/rotation/translation the affine-invariant can be omitted by simply avoid the 
+```
+--affine
+```
+Another example for hyperparameters without the affine transformation is
+```
+--lambda_disc 0.5 --delta 0.12 --lambda_l2 50.0 --lambda_pred 1.0 --lambda_sep 1.0 --lambda_sill 0.5 --strong_kp --scale_kp 0.25
+```
 
 ### Inference:
 
