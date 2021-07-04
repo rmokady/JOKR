@@ -627,6 +627,8 @@ def train(args):
                 print("Checkpoint saved")
 
             iter_cnt += 1
+            if iter_cnt > args.iters:
+                break
 
     print("Training is done")
     save_file = os.path.join(args.out, 'checkpoint')
@@ -648,7 +650,8 @@ if __name__ == '__main__':
     parser.add_argument('--g_lr', type=float, default=0.0001)
     parser.add_argument('--d_lr', type=float, default=0.0001)
     parser.add_argument('--bs', type=int, default=8)
-    parser.add_argument('--epoch', type=int, default=45000)
+    parser.add_argument('--epoch', type=int, default=2000)
+    parser.add_argument('--iters', type=int, default=45001)
     parser.add_argument('--resize_w', type=int, default=256)
     parser.add_argument('--resize_h', type=int, default=256)
     parser.add_argument('--num_kp', type=int, default=10)
