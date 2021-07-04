@@ -58,7 +58,7 @@ CUDA_VISIBLE_DEVICES=0 python train_first_stage.py --root_a ./data/cat/train_seg
 
 Second step training:
 ```
-CUDA_VISIBLE_DEVICES=0 python train_second_stage.py --root_a data/cat/train_seg/ --root_b data/fox/train_seg/ --resize --no_hflip --out ../second_cat_fox/ --load ../first_cat_fox/checkpoint_45000 --bs 6 --num_kp 14 --lambda_vgg 1.0
+CUDA_VISIBLE_DEVICES=0 python train_second_stage.py --root_a data/cat/train_seg/ --root_b data/fox/train_seg/ --resize --no_hflip --out ./second_cat_fox/ --load ./first_cat_fox/checkpoint_45000 --bs 6 --num_kp 14 --lambda_vgg 1.0
 ```
 If droplet artifact occur, please reduce the perceptual loss:
 ```
@@ -73,7 +73,7 @@ For pairs who share a similar scale/rotation/translation the affine-invariant ca
 ```
 --affine
 ```
-Another example for hyperparameters without the affine transformation is
+Another example for (first stage) hyperparameters without the affine transformation is
 ```
 --lambda_disc 0.5 --delta 0.12 --lambda_l2 50.0 --lambda_pred 1.0 --lambda_sep 1.0 --lambda_sill 0.5 --strong_kp --scale_kp 0.25
 ```
@@ -82,12 +82,12 @@ Another example for hyperparameters without the affine transformation is
 
 Generate the frames:
 ```
-CUDA_VISIBLE_DEVICES=0 python inference.py --root_a ./data/cat/train_seg/ --root_b ./data/fox/train_seg/ --resize --no_hflip --out ../infer_cat_fox/ --load ../second_cat_fox/checkpoint_30000 --bs 1 --num_kp 14 --data_size 80 --affine --splitted
+CUDA_VISIBLE_DEVICES=0 python inference.py --root_a ./data/cat/train_seg/ --root_b ./data/fox/train_seg/ --resize --no_hflip --out ./infer_cat_fox/ --load ./second_cat_fox/checkpoint_30000 --bs 1 --num_kp 14 --data_size 80 --affine --splitted
 ```
 
 To video:
 ```
-python gen_vid.py --img_path ../infer_cat_fox/ --prefix_b refined_ba_ --prefix_a b_ --out ./output/ --end_a 80 --same_length --resize --w 256 --h 157 --prefix_d refined_ab_ --prefix_c a_ --name infer_cat_fox_10.avi --fps 10.0
+python gen_vid.py --img_path ./infer_cat_fox/ --prefix_b refined_ba_ --prefix_a b_ --out ./output/ --end_a 80 --same_length --resize --w 256 --h 157 --prefix_d refined_ab_ --prefix_c a_ --name infer_cat_fox_10.avi --fps 10.0
 ```
 
 
