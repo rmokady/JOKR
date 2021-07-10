@@ -347,6 +347,9 @@ def train(args, opt=None):
     print('Started training...')
     for epoch in range(0, args.epoch):
 
+        if iter_cnt > args.iters:
+            break
+
         for data_a, data_b in zip(data_loader_a, data_loader_b):
 
             img_a, pair_a, seg_a, seg_pair_a = data_a
@@ -472,7 +475,7 @@ if __name__ == '__main__':
     parser.add_argument('--g_lr', type=float, default=0.0001)
     parser.add_argument('--d_lr', type=float, default=0.0001)
     parser.add_argument('--bs', type=int, default=4)
-    parser.add_argument('--epoch', type=int, default=2000)
+    parser.add_argument('--epoch', type=int, default=200000)
     parser.add_argument('--iters', type=int, default=30001)
     parser.add_argument('--resize_w', type=int, default=256)
     parser.add_argument('--resize_h', type=int, default=256)
