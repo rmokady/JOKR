@@ -8,7 +8,7 @@ kiwisolver==1.3.1
 lpips==0.1.3
 networkx==2.5.1
 opencv-python==4.5.2.52
-Pillow==8.2.0
+Pillow==8.3.2
 pyparsing==2.4.7
 python-dateutil==2.8.1
 PyWavelets==1.1.1
